@@ -89,6 +89,7 @@ A programação funcional, [lógica](https://pt.wikipedia.org/wiki/Programa%C3%A
 
 Exemplos de programação declarativa: **SQL**, **HTML**
 
+![image](https://user-images.githubusercontent.com/12430365/136567504-c8bb465c-a91e-4c48-be54-c7d0cf58885f.png)
 
 
 ## 🧠Objetivo de aprendizagem
