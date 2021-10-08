@@ -99,5 +99,6 @@ Lembre-se: **sua trilha será feita aqui no seu repositório no GitHub, veja a [
 3. [🌍 Como a web funciona](/como-a-web-funciona.md)
 4. [🔤 Escolhendo uma linguagem de programação](/escolhendo-uma-linguagem-de-programacao.md)
 5. [📚 Como aprender uma linguagem de programação](/como-aprender-uma-linguagem-de-programacao.md)
-6. [🏁 Por onde começar a estudar Node JS](/por-onde-comecar-a-estudar-node-js.md)
-7. [⭐ Desafios de algoritmos: Recursividade](/desafios-de-algoritmos_recursividade.md)
+6. [✨ Paradigmas de programação](/paradigmas-de-programacao.md)
+7. [🏁 Por onde começar a estudar Node JS](/por-onde-comecar-a-estudar-node-js.md)
+8. [⭐ Desafios de algoritmos: Recursividade](/desafios-de-algoritmos_recursividade.md)
