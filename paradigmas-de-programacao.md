@@ -38,7 +38,13 @@ Como o nome sugere, ele é muito baseado em funções, como na matemática usand
 
 Exemplos de linguagens que suportam programação funcional: **Prolog**, **Lisp**
 
-![image](https://user-images.githubusercontent.com/12430365/134960583-890f7858-7cdf-41b6-b1d4-744edc655740.png)
+```javascript
+function soma(a, b) {
+  return a + b;
+}
+
+const resultado = soma(1 + 1);
+```
 
 Apesar de ter surgido antes da Orientada a objetos ela só veio se tornar popular agora. Isso porque o cenário que temos hoje dos hardwares esta mais favorável para o comportamento desse paradigma.
 
@@ -56,14 +62,35 @@ Links uteis para estudar:
 
 Exemplos de linguagens que suportam programação orientadas a evento: **Javascript**, **JAVA**
 
-![image](https://user-images.githubusercontent.com/12430365/134962034-0e1654ce-0e62-4ec6-a0d0-c6fb43b80318.png)
+```javascript
+function handler() {
+  // EXECUTADO QUANDO TIVER ALGUM NOVO ELEMENTO NA FILA
+  // OU 
+  // EXECUTANDO QUANDO ALGUEM CLICAR NO ELEMENTO
+}
+
+queue.on('new', handler);
+
+document.body.addEventListener('click', handler);
+```
 
 ### [Programação orientada a objetos](https://pt.wikipedia.org/wiki/Orienta%C3%A7%C3%A3o_a_objetos)
 
 Fez muito sucesso e teve forte influencia do paradigma funcional, seu pilar esta nos objetos que nada mais são do que conjuntos de dados que pode ter origem de uma classe ou mais classes  e tem comportamentos similares ou relacionados. Imagine uma classes como uma forma de ovo de pascoa e o chocolate como os dados assim a forma é usada para dar forma para o chocolate. 
 
-![image](https://user-images.githubusercontent.com/12430365/134964109-63dc2b12-85f5-4396-9b0e-cc76f11b5550.png)
+```javascript
+class Pessoa {
+  constructor(nome, anoNascimento) {
+    const ano = new Date().getFullYear();
+    this.idade = ano - anoNascimento;
+    this.nome = nome;
+  }
 
+  maiorIdade() {
+    return this.idade > 18;
+  }
+}
+```
 ### [Programação Imperativa](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_imperativa)
 
 Um paradigma que foi muito usado no passado, e ainda é predominante sendo um dos primeiros paradigmas aprendidos por todos que iniciam na programação. 
@@ -79,8 +106,15 @@ Sua principal diferença entre o funcional esta na atribuição que permite muta
 
 Exemplos de linguagens impereativas: **C**, **JAVA**
 
-![image](https://user-images.githubusercontent.com/12430365/134961583-a4a735bb-d168-49bd-bd95-480fb5cc12fd.png)
+```javascript
+let saldo = 0;
 
+function adicionaSaldo(valor) {
+  saldo += valor;
+}
+
+adicionaSaldo(10);
+```
 
 ### [Programação Declarativa](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_declarativa)
 
@@ -90,8 +124,9 @@ A programação funcional, [lógica](https://pt.wikipedia.org/wiki/Programa%C3%A
 
 Exemplos de programação declarativa: **SQL**, **HTML**
 
-![image](https://user-images.githubusercontent.com/12430365/136567504-c8bb465c-a91e-4c48-be54-c7d0cf58885f.png)
-
+```sql
+SELECT * FROM pessoas WHERE nome = 'Marcos'
+```
 
 ## 🧠Objetivo de aprendizagem
 
