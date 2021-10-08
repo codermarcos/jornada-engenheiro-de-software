@@ -36,6 +36,8 @@ Todas as linguagens das quais recomendamos suportam todos os seguintes paradigma
 
 Como o nome sugere, ele é muito baseado em funções, como na matemática usando [imutábilidade](https://segredo.dev/o-que-e-imutabilidade/) e [funções puras](https://en.wikipedia.org/wiki/Pure_function) ou seja elas não podem gerar [efeitos colaterais (side-effects)](https://en.wikipedia.org/wiki/Side_effect_(computer_science)) ou seja alterar algo que esteja fora de seu escopo como consequência devem ser sempre [sem estado (stateless)](https://www.redhat.com/pt-br/topics/cloud-native-apps/stateful-vs-stateless) isso porque não armazenam ou alteram valores fora de seu escopo.
 
+Exemplos de linguagens que suportam programação funcional: **Prolog**, **Lisp**
+
 ![image](https://user-images.githubusercontent.com/12430365/134960583-890f7858-7cdf-41b6-b1d4-744edc655740.png)
 
 Apesar de ter surgido antes da Orientada a objetos ela só veio se tornar popular agora. Isso porque o cenário que temos hoje dos hardwares esta mais favorável para o comportamento desse paradigma.
@@ -52,7 +54,7 @@ Links uteis para estudar:
 - Comunicação assíncrona entre serviços, filas etc.
 - Comunicação real-time como Websockets.
 
-Exemplos de programação declarativa: **Javascript**, **JAVA**
+Exemplos de linguagens que suportam programação orientadas a evento: **Javascript**, **JAVA**
 
 ![image](https://user-images.githubusercontent.com/12430365/134962034-0e1654ce-0e62-4ec6-a0d0-c6fb43b80318.png)
 
@@ -74,7 +76,6 @@ Para entender ele um pouco melhor basta entender a palavra [**imperativo**](http
 - Um estado (variaveis globais, locais) que sofre modificações durante a execução do software
 
 Sua principal diferença entre o funcional esta na atribuição que permite mutar o estado durante a execução.
-
 
 Exemplos de linguagens impereativas: **C**, **JAVA**
 
