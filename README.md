@@ -101,4 +101,5 @@ Lembre-se: **sua trilha será feita aqui no seu repositório no GitHub, veja a [
 5. [📚 Como aprender uma linguagem de programação](/como-aprender-uma-linguagem-de-programacao.md)
 6. [✨ Paradigmas de programação](/paradigmas-de-programacao.md)
 7. [🏁 Por onde começar a estudar Node JS](/por-onde-comecar-a-estudar-node-js.md)
+7. [⭐ Desafios de algoritmos: Manipulação de Objetos no Javascript](/desafios-de-algoritmos_manipulacao-de-objetos-no-javascript.md)
 8. [⭐ Desafios de algoritmos: Recursividade](/desafios-de-algoritmos_recursividade.md)
