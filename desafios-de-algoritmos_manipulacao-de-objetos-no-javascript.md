@@ -1,10 +1,10 @@
-# 🧙 Manipulação de Objetos no Javascript
+# ⭐ Desafios de algoritmos: Manipulação de Objetos no Javascript
 
 Vamos entender oque é um objeto como podemos usar ele, e como o Javascript trabalha com objetos.
 
 ------------------------
 
-- [🧙 Manipulação de Objetos no Javascript](#-manipulação-de-objetos-no-javascript)
+- [⭐ Desafios de algoritmos: Manipulação de Objetos no Javascript](#-desafios-de-algoritmos-manipulação-de-objetos-no-javascript)
   - [📚 Oque é um objeto](#-oque-é-um-objeto)
     - [Propriedades](#propriedades)
   - [🐣 O básico sobre objetos](#-o-básico-sobre-objetos)
@@ -12,10 +12,8 @@ Vamos entender oque é um objeto como podemos usar ele, e como o Javascript trab
     - [Como acessar propriedades e valores de um objeto](#como-acessar-propriedades-e-valores-de-um-objeto)
     - [Adicionar propriedades em um objeto](#adicionar-propriedades-em-um-objeto)
     - [Remover propriedades de um objeto](#remover-propriedades-de-um-objeto)
-  - [POO no Javascript](#poo-no-javascript)
-    - [Protototipar um objeto](#protototipar-um-objeto)
-    - [Sugar syntax para Prototypar objetos](#sugar-syntax-para-prototypar-objetos)
-  - [💪 Desafios para praticar](#-desafios-para-praticar)
+  - [💪 Desafio para praticar](#-desafio-para-praticar)
+    - [Exemplo](#exemplo)
   - [🧠 Objetivo de aprendizagem](#-objetivo-de-aprendizagem)
   - [✔️ Entrega mínima](#️-entrega-mínima)
 
@@ -31,6 +29,25 @@ Na programação ele é um tipo de dado que pode conter diferentes tipos de dado
 São variáveis que estão vinculadas a um objeto elas definem as características dele. Por exemplo: Um **carro** ele poderia ter as seguintes propriedades -> **cor**, **placa**, **ano**, **modelo**.
 
 ## 🐣 O básico sobre objetos
+
+Um objeto pode ter **qualquer tipo de dado** como valor de suas propriedades como `string`, `number`, `function` inclusive outros objetos:
+
+```javascript
+nulos: null, 
+numeros: 1,
+arrays: [],
+objetos: {},
+strings: 'alo',
+funcoes: () => {}
+```
+
+Porem o **nome das propriedades** sempre devem ser um tipo primitivo como `string`, `number` ou [`Symbol`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Symbol).
+
+```javascript
+[Symbol('nome')]: 'nome como symbol',
+nome: 'nome como string',
+[0]: 'nome como number',
+```
 
 ### Como criar um objeto
 
@@ -263,16 +280,6 @@ Object
     },
   );
 
-console.log( pessoa ); 
-/*
-{nome: 'Marcos'} [[Prototype]]: Object
-constructor: ƒ Object()
-  constructor: ƒ Object()
-  hasOwnProperty: ƒ hasOwnProperty()
-  toString: ƒ toString()
-  …
-*/
-
 pessoa.nome = 'Outro nome'; 
 
 console.log( pessoa ); 
@@ -288,23 +295,157 @@ constructor: ƒ Object()
 
 ### Remover propriedades de um objeto
 
+Para remover uma propriedade de um objeto temos duas formas:
 
-## POO no Javascript
+1. **Criar outro objeto sem determinada propriedade**, dessa forma temos inumeras abordagens:
+
+* **Criar outro objeto manualmente**:
+
+```javascript
+let pessoa = { id: 1, nome: 'Marcos', nascimento: '06/08/1998' };
+
+pessoa = { id: pessoa.id, nascimento: pessoa.nascimento };
+
+console.log( pessoa ); // <- Exibe como o objeto esta
+/*
+{id: 1, nascimento: '06/08/1998'} [[Prototype]]: Object
+constructor: ƒ Object()
+  constructor: ƒ Object()
+  hasOwnProperty: ƒ hasOwnProperty()
+  toString: ƒ toString()
+  …
+*/
+```
+
+Existem muitas outras formas de fazer isso como usar o [spred operator](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Spread_syntax) ou criar:
+
+* **Criar outro objeto manualmente**:
+
+```javascript
+let pessoa = { id: 1, nome: 'Marcos', nascimento: '06/08/1998' };
+
+pessoa = { id: pessoa.id, nascimento: pessoa.nascimento };
+
+console.log( pessoa ); // <- Exibe como o objeto esta
+/*
+{id: 1, nascimento: '06/08/1998'} [[Prototype]]: Object
+constructor: ƒ Object()
+  constructor: ƒ Object()
+  hasOwnProperty: ƒ hasOwnProperty()
+  toString: ƒ toString()
+  …
+*/
+```
 
 
-### Protototipar um objeto
+2. **Deletar determinada propriedade da memoria**, usando uma das [palavras reservadas](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Lexical_grammar#palavras-chave) do javascript o 
+[delete](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete),
+dessa forma alteramos o objeto original:
 
+```javascript
+const pessoa = { nome: 'Marcos', nascimento: '06/08/1998' };
 
-### Sugar syntax para Prototypar objetos
+delete pessoa.nome;
 
+console.log( pessoa ); // <- Exibe como o objeto esta
+/*
+{id: 1, nascimento: '06/08/1998'} [[Prototype]]: Object
+constructor: ƒ Object()
+  constructor: ƒ Object()
+  hasOwnProperty: ƒ hasOwnProperty()
+  toString: ƒ toString()
+  …
+*/
+```
 
+## 💪 Desafio para praticar
 
-## 💪 Desafios para praticar
+Crie funções para estruturar os dados de uma **escola**, lembre-se de incluir os objetos **aluno**, **professor**, **matérias**.
+Se sentir a necessidade de criar mais objetos sinta-se livre para estruturar como quiser. Para fazer o desafio use alguma dessas ferramentas:
 
-Para realizar:
+- [codepen](https://codepen.io/)
+- [replit](https://replit.com/)
 
-* [one]()
-* [two]()
+Para fazer o desafio você precisa de no minimo 3 funções:
+
+Uma para a criação do objeto que:
+
+- Deve retornar um objeto
+- Pode chamar outras funções dentro dela
+- Pode retornar outras funções dentro dos objetos
+- Pode retornar outros objetos dentro do objeto principal
+
+Uma para matricular um aluno em uma materia que: 
+
+- Deve adicionar algum vinculo de um aluno a uma materia
+- Pode receber um objeto como parametro ou estar dentro de um objeto
+
+Uma para remover um aluno de uma materia que: 
+
+- Deve remover o vinculo de um aluno a uma materia
+- Pode receber um objeto como parametro ou estar dentro de um objeto
+
+### Exemplo
+
+Imagine um cenario onde teria que estruturar os dados de uma concessionária, onde os principais dados seriam o **carro**, **vendedor**, **comprador**.
+
+```javascript
+// Função para criar um carro
+function criaCarro(ano, modelo, cor) {
+  return {
+    id: Math.random().toString(36).substring(7),
+    ano, modelo, cor
+  };
+}
+
+// Função que cria um objeto pessoa
+function criaPessoa(nome) {
+  return {
+    nome,
+  };
+}
+
+// Função que cria um objeto vendedor
+function criaVendedor(pessoa) {
+  return {
+    codigo: Math.random().toString(36).substring(7),
+    ...pessoa,
+  };
+}
+
+// Função que cria um objeto vendedor
+function criaVenda(carro, vendedor) {
+  return {
+    data: new Date(), carro, vendedor
+  };
+}
+
+// Função que rotorna o objeto principal
+function criaConcessionaria() {
+  const carros = [
+    criaCarro(2021, 'fusca', 'preto'),      
+    criaCarro(1996, 'fusca', 'azul'),
+  ];
+
+  const vendedores = [
+    criaVendedor(criaPessoa('Marcos')),      
+  ];
+
+  const vendidos = [];
+
+  const venderCarro = (carroVendido, vendedor) => {
+    const idx = carros.findIndex((carro) => carroVendido.id === carro.id);
+
+    vendidos.push(criaVenda(carros.splice(idx, 1), vendedor);
+  };
+
+  return { carros, vendedores, vendidos, venderCarro };
+}
+
+const concessionaria = criaConcessionaria();
+
+concessionaria.venderCarro(a.carros[0], a.vendedores[0]);
+```
 
 
 ## 🧠 Objetivo de aprendizagem
@@ -313,3 +454,4 @@ O Objetivo deste estudo é aprender os conceitos fundamentais ao trabalhar com d
 
 ## ✔️ Entrega mínima
 
+Estude bastante sobre objetos, e faça o maximo que conseguir dos desafios.
