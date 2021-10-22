@@ -19,7 +19,7 @@ Se você já conhece um pouco sobre outra linguagem de programação, aprender o
       - [Projetos pessoais](#projetos-pessoais)
       - [Sites de desafios](#sites-de-desafios)
       - [ttps://pt.wikipedia.org/wiki/Coding_Dojo)](#ttpsptwikipediaorgwikicoding_dojo)
-  - [🧠Objetivo de aprendizagem](#objetivo-de-aprendizagem)
+  - [🧠 Objetivo de aprendizagem](#-objetivo-de-aprendizagem)
   - [✔️ Entrega mínima](#️-entrega-mínima)
 
 ## 🏁 Por onde começar
@@ -134,7 +134,7 @@ Uma das formas mais divertidas é reunir os amigos, o dojo é muito comum em eve
 
 Tudo isso são apenas ideias teste elas e desenvolva suas próprias maneiras.
 
-## 🧠Objetivo de aprendizagem
+## 🧠 Objetivo de aprendizagem
 
 O Objetivo deste estudo é descobrir algumas fontes populares e confiáveis, e algumas formas de praticar.
 

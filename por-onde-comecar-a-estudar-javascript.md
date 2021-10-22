@@ -1,4 +1,4 @@
-# 🏁 Por onde começar a estudar Node JS
+# 🏁 Por onde começar a estudar Javascript
 
 Como qualquer linguagem exige muito pratica então nesta issue você verá como iniciar montando seu ambiente e alguns lugares onde buscar conteúdo e alguns exercícios para praticar.
 
@@ -38,7 +38,7 @@ O primeiro passo é entender que temos dois caminhos um client-side ou seja no n
 
 Tente ver se já sabe algo se tem alguma duvida sobre algum revisite o conhecimento, é muito importante que esta parte esteja muito clara, pois isso ira facilitar tanto se quiser aprender o Javascript para o navegador quanto para o servidor.
 
-## <a name="Ecalpsu"></a> 📑 Entendendo como a linguagem pode ser usada
+## 📑 Entendendo como a linguagem pode ser usada
 
 Neste ponto vamos entender muitas [características](https://pt.wikipedia.org/wiki/JavaScript#Caracter%C3%ADsticas) dele isso é muito importante para um conhecimento aprofundado. Não se preocupe se não entender todos esses pontos inicialmente, não se apegue neles neste momento mas é muito importante que entenda se quiser ter um profundo conhecimento.
 
@@ -46,7 +46,7 @@ Como disse antes o Javascript pode ser usado quase em qualquer lugar isso graça
 
 ![v8 works digram](https://images.ponyfoo.com/uploads/addy-ad3b2ea8f9be48a18c4bdad5041a3237.png)
 
-### <a name="OJnN"></a> O Javascript no Navegador
+### O Javascript no Navegador
 
 Uma das formas mais importantes onde o Javascript é usando é no navegador no caso por diversas [render engines](https://pt.wikipedia.org/wiki/Mecanismo_de_renderiza%C3%A7%C3%A3o) nem todas usam a v8 um exemplo disso é o [Gecko](https://pt.wikipedia.org/wiki/Gecko_(software)) a render engine do Firefox que usa o [SpiderMonkey](https://spidermonkey.dev/) um interpretador alternativo a v8.
 
@@ -56,7 +56,7 @@ As principais render engines existentes são o [WebKit](https://pt.wikipedia.org
 
 Neste caso vamos ver um pouco mais sobre o mais recente e popular deles o Blink. Ele tem esse nome foi influenciado pela [tag blink](https://en.wikipedia.org/wiki/Blink_element) que ele nunca deu suporte.
 
-### <a name="OJnS"></a> O Javascript no Servidor
+### O Javascript no Servidor
 
 É chamado de [NodeJS](https://pt.wikipedia.org/wiki/Node.js) tem uma versão estável oficial para todos os principais OS, pode ser usado de muitas maneiras diferentes. Abaixo vamos ver como ele funciona e algumas de suas principais caracteristicas.
 
@@ -72,23 +72,49 @@ O responsável por boa parte das ações no sistema operacional é a [LIBUV](htt
 
 ![arquitetura node](https://drive.google.com/u/0/uc?id=1jWpfQXnRWfY_1iF88zi6cwstGaYbJwkE&export=download)
 
-#### Javascript é uma linguagem de [tipagem fraca e dinamicamente](https://pt.wikipedia.org/wiki/Linguagem_tipada)
+
+### Caracteristicas do Javascript
+
+Como toda linguagem Javascript tem algumas caracteristas importantes, que podem te ajudar a ter mais dominio sobre ela.
+
+
+#### Suporte universal
+
+Graças a **V8** hoje é possivel usar a linguagem para praticamente qualquer coisa como:
+
+- Criar uma aplicação web para com NodeJS. 
+- Manipular o [DOM]() / HTML no [browser]().
+- Computação embarcada como Arduino usando [Jhonyfive].
+
+Entre muitas outras possibilidades.
+
+#### Dinamica
+
+Você consegue executar trechos de códigos digitados em [run-time (tempo de execução)](https://pt.wikipedia.org/wiki/Tempo_de_execu%C3%A7%C3%A3o), graças ao [`eval`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/eval)
+
+#### Multi-paradgima
+
+Suporta diferentes [paradgimas](https://pt.wikipedia.org/wiki/Paradigma_de_programa%C3%A7%C3%A3o) como **orientados a eventos**, **funcional** e **imperativos** (incluindo orientado a objetos e prototype-based). Para entender um pouco melhor sobre paradgimas veja alguns passos anteriores nas issues.
+
+#### [Tipagem fraca e dinamicamente](https://pt.wikipedia.org/wiki/Linguagem_tipada)
 
 O fato de você não ter que inferir o tipo não significa que ela não tenha tipos. Em ambos temos vantagens e desvantagens. Com a linguagens fortemente tipadas, identificamos erros no código mias facilmente, por outro lado sua curva de aprendizagem pode se tornar maior.
 
-#### Node é Single [Thread](https://pt.wikipedia.org/wiki/Thread_(computa%C3%A7%C3%A3o))
+#### É Single [Thread](https://pt.wikipedia.org/wiki/Thread_(computa%C3%A7%C3%A3o))
 
-Na verdade quem é single thread é a **V8**, não entraremos muito nesse ponto neste momento mais a frente entenderemos como isso funciona. Por hora entenda que ele só pode tratar uma coisa de cada vez, então o processamento de cada uma não pode ser demorado.
+A verdade é que a **V8** single thread é, não entraremos muito nesse ponto neste momento mais a frente entenderemos como isso funciona. Por hora entenda que ele só pode tratar uma coisa de cada vez, então o processamento de cada uma não pode ser demorado.
 
 Se quiser entender isso neste momento recomendamos essas leituras:
 
 [en](https://betterprogramming.pub/is-node-js-really-single-threaded-7ea59bcc8d64) [pt](https://imasters.com.br/front-end/node-js-o-que-e-esse-event-loop-afinal) [pt](https://imasters.com.br/front-end/node-js-v8-single-thread-e-io-nao-bloqueante)
 
-#### Javascript não é a mesma coisa que [EcmaScript](https://pt.wikipedia.org/wiki/ECMAScript)
+#### Não é a mesma coisa que [EcmaScript](https://pt.wikipedia.org/wiki/ECMAScript)
 
 É muito comum as pessoas confundirem afinal o Ecmascript é a especificação de como o Javascript deve ser tanto no navegador quando no runtime do Node.
 
-## <a name="Poa"></a> 🔧 Preparando o ambiente
+## 🔧 Preparando o ambiente
+
+Independente se vai aprender o Javascript para *client-side* ou para *server-side* é importante ter o NodeJS instalado na sua maquina pois ele é muito usado para ambos os casos.
 
 Para iniciar precisamos preparar nossa maquina para conseguirmos executar nosso código. Para isso precisamos instalar o NodeJS no ambiente de **desenvolvimento** geralmente usamos o [NVM (Node version manager)](https://github.com/nvm-sh/nvm) isso porque diferentes de outras linguagens o node não controla sua própria versão de maneira automática. Baixe de acordo com seu sistema operacional:
 
@@ -98,71 +124,7 @@ Para iniciar precisamos preparar nossa maquina para conseguirmos executar nosso 
 > ⚠️ **Atenção**: Se instalou o Node diretamente recomendamos desinstalar e usar o NVM.
 > *Isso porque aplicações podem usar diferentes versões do Node e a mudança de uma Versão para a outra pode tomar muito tempo*
 
-## <a name="Pop"></a> 📦 Modules ou packages
-
-São códigos prontos que geralmente facilita ou agiliza o desenvolvimento. **Os modulos a seguir estão disponiveis apenas para o Servidor** mas se deseja seguir na engenharia Frontend é muito importante que você os conheça muito bem. Para usar um modulo ou pacote você precisa aprender como funciona o [require](https://nodejs.org/en/knowledge/getting-started/what-is-require/). Com ele podemos usar código de diferentes lugares.
-
-Os **modules** são códigos oficiais do Node eles não precisam ser instalados ou baixados eles veem junto com o Node basta usa-los. Por exemplo:
-
-```javascript
-const fs = require('fs');
-```
-
-São chamados de built-in modules. Você pode encontrar uma lista completa deles [aqui](https://nodejs.org/api/synopsis.html)
-
-Alguns dos mais comuns que usamos no dia a dia são:
-
-| Pacote | Função | Exemplo |
-| --- | --- | --- |
-| [http](https://nodejs.org/api/http.html) | Usado para trabalhar com o [protocolo HTTP](https://pt.wikipedia.org/wiki/Hypertext_Transfer_Protocol) | [Criar um servidor http](https://nodejs.dev/learn/build-an-http-server) - [Fazer requisições http para outros servidores](https://nodejs.dev/learn/making-http-requests-with-nodejs) |
-| [path](https://nodejs.org/api/path.html) | Para trabalhar com [caminhos](https://pt.wikipedia.org/wiki/Caminho_(computa%C3%A7%C3%A3o)) | [Como usar o path](https://nodejs.dev/learn/nodejs-file-paths)
-| [fs](https://nodejs.org/api/fs.html) | Usado para trabalhar com arquivos. | [Criar, Deletar, Renomear um arquivo](https://nodejs.dev/learn/the-nodejs-fs-module) |
-
-### Gerenciador de pacotes
-
-O gerenciador de pacotes pode ser usado tanto para o lado o Javascript do navegador quanto para o Javascript do runtime. 
-Os modulos vistos até esse momento são os nativos por isso não precisam instalar porem temos um infinidade de pacotes da comunidade eles podem ser baixados para isso precisamos usar o [package.json](https://docs.npmjs.com/cli/v7/configuring-npm/package-json) ele precisa seguir as especificações  da doc para funcionar então para facilitar você pode usar o seguinte comando para cria-lo.
-
-```bash
-npm init -y
-```
-
-Isso vai criar um arquivo na pasta em que foi executado o comando. Nele controlamos as versões dos pacotes que iremos instalar por exemplo.
-
-```bash 
-npm install http-server
-```
-
-O [http-server](https://www.npmjs.com/package/http-server) é usado para criar um servidor de arquivos estáticos. Depois de instalado ele deve ter alterado seu **package.json** com isso podemos iniciar o servidor usando o [npx](https://www.npmjs.com/package/npx) um pacote nativo que acompanha todas as versões do npm >= 5.2.0 (acima da cinco).
-
-```bash
-npx http-server
-```
-
-> Se quiser entender um pouco melhor o npx pode ler estas repeferencias.
-> [en](https://www.freecodecamp.org/news/npm-vs-npx-whats-the-difference/) [en](https://stackoverflow.com/questions/50605219/difference-between-npx-and-npm) [en](https://blog.npmjs.org/post/162869356040/introducing-npx-an-npm-package-runner) [pt](https://pt.stackoverflow.com/questions/433378/qual-a-diferen%C3%A7a-entre-npm-e-npx) [pt](https://blog.rocketseat.com.br/conhecendo-o-npx-executor-de-pacote-do-npm/) [pt](https://walde.co/2018/02/15/conhecendo-o-npx-o-package-runner-npm/)
-
-Isso vai iniciar um server local provendo a pasta em que estive rodando. Se quiser testar crie um arquivo **index.html** com o seguinte conteúdo na pasta que iniciou.
-
-```html
-<body>
-    <h1>Olá mundo, porra nenhuma aqui é velocidade máxima.</h1>
-</body>
-```
-
-Você também poderia ter instalado o pacote globalmente na sua maquina assim não teria a necessidade de ter um ```package.json``` para isso usaria o comando.
-
-```bash
-npm install http-server -g
-```
-
-Assim poderia usa-lo em qualquer pasta sem a necessidade de usar o npx ou instalar ele novamente, usando apenas.
-
-```bash 
-http-server
-```
-
-## <a name="Ec"></a> 🔎 Encontrando conteúdo
+## 🔎 Encontrando conteúdo
 
 Como toda linguagem tem lugares em comum que pode ser usado para busca conteúdo. Aqui você verá alguns pontos exclusivos do NodeJS.
 
@@ -177,10 +139,10 @@ Como toda linguagem tem lugares em comum que pode ser usado para busca conteúdo
 > [Node DEV](https://nodejs.dev/learn)
 > [MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) um dos melhores lugares para estudar sobre Javascript.
 
-## <a name="Oa"></a> 🧠Objetivo de aprendizagem
+## 🧠 Objetivo de aprendizagem
 
-O Objetivo deste estudo é entender a fundo uma das partes mais conceituais, e os pontos mais comuns por onde começar a estudar.
+O Objetivo deste estudo é entender a fundo as partes mais conceituais, e os pontos mais comuns por onde começar a estudar.
 
-## <a name="Em"></a> ✔️ Entrega mínima
+## ✔️ Entrega mínima
 
-Escolha onde deseja se aprofunda, como frontend ou backend e estudo os conceitos de onde deseja se aprofundar.
+Escolha onde deseja se aprofunda, como frontend ou backend e estude o básico da linguagem encontrando 2 pontos que não conhece e criando exemplos de uso sobre.
