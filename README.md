@@ -104,3 +104,4 @@ Lembre-se: **sua trilha será feita aqui no seu repositório no GitHub, veja a [
 8. [⭐ Desafios de algoritmos: Manipulação de Objetos no Javascript](/desafios-de-algoritmos_manipulacao-de-objetos-no-javascript.md)
 9. [🥚 POO no Javascript](/poo-no-javascript.md)
 10. [⭐ Desafios de algoritmos: Recursividade](/desafios-de-algoritmos_recursividade.md)
+11. [👣 Primeiros passos no backend](/primeiros-passos-no-backend.md)
