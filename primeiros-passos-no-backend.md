@@ -105,14 +105,20 @@ Neste momento como desenvolvedor backend você precisa sempre se preocupar com a
 
 Frameworks:
 
-- [Next]()
-- [Nest]()
-- [Loopback]()
+- [Next](https://nextjs.org/)
+- [Nest](https://docs.nestjs.com/)
+- [Loopback](https://loopback.io/)
 
 Bibliotecas:
 
-- [Express]()
-- [Fastfy]()
+- [Express](https://expressjs.com/pt-br/)
+- [Fastfy](https://www.fastify.io/)
+
+A principal diferença entre os dois esta em como escrevemos nosso código e nas funções que cada um realiza. Quando optamos por um framework ele geralmente
+dita a forma como escrevemos nosso código enquanto em bibliotecas temos a liberdade de escolher diferentes implementações.
+
+Um framework tambem costuma ter tudo que precisamos para executar nossa solução isso causar um overlap de funções do framework com o nosso Cloud Provider.
+
 
 **Setup do projeto** como outra pessoa consegue executar o projeto na maquina dela, mesmo que você seja o o unico desenvolvedor sempre tenha esse ponto 
 em mente afinal existem muitas possibilidades como atuar em varios projetos, mudar de tecnologia, ficar um longo tempo sem executar o projeto ou até mesmo o [fator onibus](https://pt.wikipedia.org/wiki/Fator_%C3%B4nibus). Para garantir que outra pessoa consiga fazer o setup podemos:
@@ -125,7 +131,7 @@ em mente afinal existem muitas possibilidades como atuar em varios projetos, mud
 
 [Linters](https://en.wikipedia.org/wiki/Lint_(software)) esses dependem muito da sua linguagem abaixo alguns de NodeJs:
 
-- [eslint]()
+- [eslint](https://eslint.org/)
 
 Design patterns:
 
@@ -139,15 +145,15 @@ Design patterns:
 
 APIs:
 
-- [Swagger]()
+- [Swagger](https://swagger.io/docs/)
 
 Código:
 
-- [Comentarios no código]() podendo usar ferramentas como [JsDoc](), [TsDoc]()
+- [Comentarios no código](https://en.wikipedia.org/wiki/Comment_(computer_programming)) podendo usar ferramentas como [JsDoc](https://jsdoc.app/), [TsDoc](https://tsdoc.org/)
   
 Setup do projeto: 
 
-- [Markdown no README.md]()
+- [Markdown no README.md](https://pt.wikipedia.org/wiki/Markdown)
 
 ### 5️⃣ Testes
 
@@ -155,16 +161,16 @@ Essa é a parte onde validamos oque escrevemos, como disse antes pode ser feita 
 
 Tambem conseguiriamos testar após porem quando testamos durante ou antes isso ajuda a manter a qualidade do nosso código.
 
-Podemos testar nossa aplicação de muitas formas diferentes, com [testes funcionais]() que pode ser dividida em 3 partes:
+Podemos testar nossa aplicação de muitas formas diferentes, com [testes funcionais](https://pt.wikipedia.org/wiki/Teste_funcional) que pode ser dividida em 3 partes:
 
 - [Testes unitarios]() que testa as menores parte do nosso código como funções e declarações tudo individualmente usando [mocks]().
 - [Testes de integração]() que testa como nosso código se conversa dentro da aplicação sem mocks.
 - [Testes e2e]() que testa toda nossa aplicação desde o frontend até o backend simulando um usuario.
 
-Ou com [testes não funcionais]() que existem possibilidades:
+Ou com [testes não funcionais](https://en.wikipedia.org/wiki/Non-functional_testing) que existem possibilidades:
 
-- [Testes de carga]() que valida ou entende quantos usuarios em simultaneo seu backend consegue suportar.
-- [Testes de performance]() que valida em quanto tempo seu backend esta respondendo.
+- [Testes de carga](https://en.wikipedia.org/wiki/Scalability_testing) que valida ou entende quantos usuarios em simultaneo seu backend consegue suportar.
+- [Testes de performance](https://en.wikipedia.org/wiki/Software_performance_testing) que valida em quanto tempo seu backend esta respondendo.
 
 Para realizar esses testes existem muitas ferramentas como.
 
@@ -195,6 +201,11 @@ Analise de código estatica:
 - [SonarScube]()
 - [Codacy]()
 
+Cloud Providers: 
+
+- [Azure]()
+- [Amazon (AWS)]()
+- [Google Cloud (GCP)]()
 
 ### 7️⃣ Manutenção
 
