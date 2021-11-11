@@ -117,7 +117,12 @@ Bibliotecas:
 A principal diferença entre os dois esta em como escrevemos nosso código e nas funções que cada um realiza. Quando optamos por um framework ele geralmente
 dita a forma como escrevemos nosso código enquanto em bibliotecas temos a liberdade de escolher diferentes implementações.
 
+![image](https://user-images.githubusercontent.com/12430365/141364009-25f02d23-5f6e-4ece-a06f-e1611b7204ff.png)
+
+
 Um framework tambem costuma ter tudo que precisamos para executar nossa solução isso causar um overlap de funções do framework com o nosso Cloud Provider.
+
+![image](https://user-images.githubusercontent.com/12430365/141364042-eaa3595c-1760-4020-9970-dad78d04e142.png)
 
 
 **Setup do projeto** como outra pessoa consegue executar o projeto na maquina dela, mesmo que você seja o o unico desenvolvedor sempre tenha esse ponto 
