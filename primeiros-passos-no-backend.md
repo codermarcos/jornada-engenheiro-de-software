@@ -119,6 +119,7 @@ dita a forma como escrevemos nosso código enquanto em bibliotecas temos a liber
 
 ![image](https://user-images.githubusercontent.com/12430365/141364009-25f02d23-5f6e-4ece-a06f-e1611b7204ff.png)
 
+![image](https://user-images.githubusercontent.com/12430365/141364351-20758c6d-3f5b-4095-b7a4-5cb254791f7f.png)
 
 Um framework tambem costuma ter tudo que precisamos para executar nossa solução isso causar um overlap de funções do framework com o nosso Cloud Provider.
 
