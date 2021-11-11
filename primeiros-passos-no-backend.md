@@ -114,10 +114,11 @@ Bibliotecas:
 - [Express](https://expressjs.com/pt-br/)
 - [Fastfy](https://www.fastify.io/)
 
-A principal diferença entre os dois esta em como escrevemos nosso código e nas funções que cada um realiza. Quando optamos por um framework ele geralmente
-dita a forma como escrevemos nosso código enquanto em bibliotecas temos a liberdade de escolher diferentes implementações.
+A principal diferença entre os dois esta em como escrevemos nosso código e nas funções que cada um realiza. 
 
 ![image](https://user-images.githubusercontent.com/12430365/141364009-25f02d23-5f6e-4ece-a06f-e1611b7204ff.png)
+
+Quando optamos por um framework ele geralmente dita a forma como escrevemos nosso código enquanto em bibliotecas temos a liberdade de escolher diferentes implementações.
 
 ![image](https://user-images.githubusercontent.com/12430365/141364351-20758c6d-3f5b-4095-b7a4-5cb254791f7f.png)
 
