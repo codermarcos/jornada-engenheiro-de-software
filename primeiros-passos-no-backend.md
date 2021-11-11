@@ -126,7 +126,11 @@ Um framework tambem costuma ter tudo que precisamos para executar nossa soluçã
 
 
 **Setup do projeto** como outra pessoa consegue executar o projeto na maquina dela, mesmo que você seja o o unico desenvolvedor sempre tenha esse ponto 
-em mente afinal existem muitas possibilidades como atuar em varios projetos, mudar de tecnologia, ficar um longo tempo sem executar o projeto ou até mesmo o [fator onibus](https://pt.wikipedia.org/wiki/Fator_%C3%B4nibus). Para garantir que outra pessoa consiga fazer o setup podemos:
+em mente afinal existem muitas possibilidades como atuar em varios projetos, mudar de tecnologia, ficar um longo tempo sem executar o projeto ou até mesmo o [fator onibus](https://pt.wikipedia.org/wiki/Fator_%C3%B4nibus). 
+
+![image](https://user-images.githubusercontent.com/12430365/141364209-c9e19336-2107-44ab-ac61-a194835570cd.png)
+
+Para garantir que outra pessoa consiga fazer o setup podemos:
 
 - Escrever uma boa documentação.
 - Usar ferramentas para facilitar o setup. 
