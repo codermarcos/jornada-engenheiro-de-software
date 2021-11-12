@@ -124,7 +124,7 @@ Quando não temos muitas ideias de projetos pessoais, uma excelente forma de pra
 * [Exercism](https://exercism.io/)
 * [Project Euler](https://projecteuler.net/)
 
-#### ttps://pt.wikipedia.org/wiki/Coding_Dojo)
+#### [Dojo](https://pt.wikipedia.org/wiki/Coding_Dojo)
 
 Uma das formas mais divertidas é reunir os amigos, o dojo é muito comum em eventos e para compartilhar conhecimento. Existem muitas abordagens dele mas todas são feitas em grupo. Abaixo alguns links com instruções:
 
