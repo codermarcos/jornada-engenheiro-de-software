@@ -26,7 +26,7 @@ orientação a objetos usando prototipo.
 
 Para alguns esses recursos não são o sulficiente para ser uma [linguagem orientada a objetos](https://pt.wikipedia.org/wiki/Orienta%C3%A7%C3%A3o_a_objetos) por falta de:
 
-❌ **Classe abstra** ou **Abstração** (até é possivel atravez de algumas implementações porem não de forma nativa)
+❌ **Classe abstra** ou **Abstração** (até é possivel atravez de algumas implementações porem não de forma nativa)  
 ❌ **[Sobrecarga (Overload)](https://pt.wikipedia.org/wiki/Sobrecarga_de_fun%C3%A7%C3%A3o)**
 
 Contudo esses recursos não são os pilares da Orientação a objetos, os pilares são:
