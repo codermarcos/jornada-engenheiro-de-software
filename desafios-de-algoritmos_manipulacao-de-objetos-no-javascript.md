@@ -38,7 +38,8 @@ numeros: 1,
 arrays: [],
 objetos: {},
 strings: 'alo',
-funcoes: () => {}
+funcoes: () => {},
+symbols: Symbol('valor'),
 ```
 
 Porem o **nome das propriedades** sempre devem ser um tipo primitivo como `string`, `number` ou [`Symbol`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Symbol).
