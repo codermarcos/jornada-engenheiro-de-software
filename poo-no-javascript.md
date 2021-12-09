@@ -20,9 +20,9 @@ Vamos entender como podemos trabalhar com orientação a objetos no Javascript. 
 O primeiro passo é entender que o Javascript é uma [linguagem orientada a prótotipos](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_baseada_em_prot%C3%B3tipos), e uma das unicas que trabalha com
 orientação a objetos usando prototipo. 
 
-✔️ **Herança**: é implementada através do processo de clonagem de objetos existentes que servem como protótipos.
-✔️ **Encapsulamento**: é implementada através de variaveis locais dentro do escopo das funções (objetos).
-✔️ **Polimorfismo**: é implementando re-definindo os comportamentos do objeto base.
+✔️ **Herança**: é implementada através do processo de clonagem de objetos existentes que servem como protótipos.  
+✔️ **Encapsulamento**: é implementada através de variaveis locais dentro do escopo das funções (objetos).  
+✔️ **Polimorfismo**: é implementando re-definindo os comportamentos do objeto base.  
 
 Para alguns esses recursos não são o sulficiente para ser uma [linguagem orientada a objetos](https://pt.wikipedia.org/wiki/Orienta%C3%A7%C3%A3o_a_objetos) por falta de:
 
