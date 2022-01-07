@@ -39,7 +39,7 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: Descreva qual o problema, ou como ajudar:
+      label: Descreva qual o problema, ou como ajudar
       description: Explique o problema que encontrou, ou sugira uma mudança.
       placeholder: Quero sugerir esse link: https://xpto.com para o conteudo /como-a-web-funciona.md!
     validations:
