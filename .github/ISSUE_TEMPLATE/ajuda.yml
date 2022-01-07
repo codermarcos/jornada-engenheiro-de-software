@@ -1,6 +1,6 @@
 name: Abertura de tarefa
 description: Abrir uma tarefa para em caso de problema, correção ou sugestão
-title: "[Bug]: "
+title: "[Correcao] "
 labels: ["problema", "correção", "sugestão"]
 assignees:
   - octocat
@@ -17,7 +17,7 @@ body:
   - type: dropdown
     id: subject
     attributes:
-      label: Como chegou aqui?
+      label: "Como chegou aqui?"
       description: Entrou intencionalmente, ou estava tentando acessar um link de referencia do conteudo.
       options:
         - Encontrei um link nos meio do conteudo que me mandou aqui!
@@ -27,7 +27,7 @@ body:
   - type: dropdown
     id: help
     attributes:
-      label: Como quer ajudar?
+      label: "Como quer ajudar?"
       description: Como pretende ajudar abrindo essa issue.
       options:
         - Apenas sinalizar um link que jogou aqui
@@ -39,7 +39,7 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: Descreva qual o problema, ou como ajudar
+      label: "Descreva qual o problema, ou como ajudar"
       description: Explique o problema que encontrou, ou sugira uma mudança.
       placeholder: Quero sugerir esse link: https://xpto.com para o conteudo /como-a-web-funciona.md!
     validations:
