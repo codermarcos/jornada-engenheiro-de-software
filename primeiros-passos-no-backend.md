@@ -88,6 +88,8 @@ Com essas ferramentas documentamos a [arquitetura](https://pt.wikipedia.org/wiki
 
 Neste ponto tambem escolhemos se nossa aplicação vai usar um [iaas](https://pt.wikipedia.org/wiki/HaaS) com uma [maquina virtual](https://pt.wikipedia.org/wiki/M%C3%A1quina_virtual), ou em um [saas](https://pt.wikipedia.org/wiki/Software_como_servi%C3%A7o) como [serveless](https://en.wikipedia.org/wiki/Serverless_computing) para tomar essas decisões precismos entender o cenario da aplicação.
 
+![image](https://user-images.githubusercontent.com/12430365/149586524-c6607fb4-52b8-49ed-b12b-10b03fb4ef50.png)
+
 essas decisões impactam diretamente:
 
 - No custo de uso, desenvolvimento e manutenção da aplicação
