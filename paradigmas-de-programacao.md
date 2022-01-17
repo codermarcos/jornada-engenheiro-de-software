@@ -43,7 +43,7 @@ function soma(a, b) {
   return a + b;
 }
 
-const resultado = soma(1 + 1);
+const resultado = soma(1, 1);
 ```
 
 Apesar de ter surgido antes da Orientada a objetos ela só veio se tornar popular agora. Isso porque o cenário que temos hoje dos hardwares esta mais favorável para o comportamento desse paradigma.
