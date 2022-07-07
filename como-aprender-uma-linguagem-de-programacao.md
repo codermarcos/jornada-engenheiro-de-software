@@ -84,6 +84,7 @@ Temos alguns lugares onde é comum enviar nossas duvidas, e outros desenvolvedor
 * [Issue no Github](https://github.com/) da ferramenta que esta usando (*algumas ferramentas tem um fórum para duvidas*)
 * [Reddit](https://www.reddit.com/)
 * [Twitter](https://twitter.com/)
+* [meetup](https://www.meetup.com/)
 * Seu mentor
 
 #### Exemplos de código
