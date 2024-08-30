@@ -105,3 +105,6 @@ Lembre-se: **sua trilha será feita aqui no seu repositório no GitHub, veja a [
 9. [🥚 POO no Javascript](/poo-no-javascript.md)
 10. [⭐ Desafios de algoritmos: Recursividade](/desafios-de-algoritmos_recursividade.md)
 11. [👣 Primeiros passos no backend](/primeiros-passos-no-backend.md)
+
+### Contribuindo
+Leia os arquivos .md ou crie um arquivo .md como guia de desenvolvimento.
